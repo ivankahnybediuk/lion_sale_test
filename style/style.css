@@ -1,33 +1,55 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url("fonts/Gilroy-Light.eot");
-  src: url("Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-UltraLight.woff") format("woff"), url("fonts/Gilroy-UltraLight.ttf") format("truetype");
+  src: url("../fonts/Gilroy-Light.eot");
+  src: url("Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("fonts/Gilroy-Light.eot");
-  src: url("Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Light.woff") format("woff"), url("fonts/Gilroy-Light.ttf") format("truetype");
+  src: url("../fonts/Gilroy-Light.eot");
+  src: url("Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("fonts/Gilroy-Regular.eot");
-  src: url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Regular.woff") format("woff"), url("fonts/Gilroy-Regular.ttf") format("truetype");
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("fonts/Gilroy-Medium.eot");
-  src: url("Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Gilroy-Medium.woff") format("woff"), url("fonts/Gilroy-Medium.ttf") format("truetype");
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: url("Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .wrapper {
@@ -40,11 +62,12 @@
 }
 
 .wrapper .page .main-screen__bg {
-  background-image: url(img/main__bg_2.png);
+  background-image: url(../img/main__bg_2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  min-width: 1700px;
+  min-height: 950px;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -85,7 +108,7 @@
   width: 27%;
   margin: 0 0 0 44%;
   text-align: center;
-  font-size: 38pt;
+  font-size: 28pt;
   font-family: "Gilroy";
   font-weight: 200;
   color: white;
@@ -101,7 +124,7 @@
 }
 
 .wrapper .page .main-screen__center-row h1 {
-  font-size: 60pt;
+  font-size: 40pt;
   font-family: "Gilroy";
   font-weight: 100;
   text-align: left;
@@ -136,6 +159,27 @@
   font-size: 18pt;
   font-weight: 200;
   font-family: "Gilroy";
+}
+
+.wrapper .page .main-screen #circle-text {
+  position: absolute;
+  font-weight: 400;
+  font-size: 11pt;
+  font-family: "Gilroy";
+  color: white;
+  z-index: 12;
+  top: 650px;
+  left: 220px;
+  -webkit-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
+}
+
+.wrapper .page .main-screen__play {
+  width: 70px;
+  z-index: 20;
+  position: absolute;
+  top: 700px;
+  left: 190px;
 }
 
 #particles-background, #particles-foreground {
