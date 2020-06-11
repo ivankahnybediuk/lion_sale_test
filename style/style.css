@@ -53,15 +53,20 @@
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
+  width: 6000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
 }
 
-.wrapper .page .main-screen {
+.wrapper .main-screen {
+  display: inline-block;
   position: relative;
+  width: 1700px;
 }
 
-.wrapper .page .main-screen__bg {
+.wrapper .main-screen__bg {
   background-image: url(../img/main__bg_2.png);
   background-position: center;
   background-size: cover;
@@ -73,7 +78,7 @@
   z-index: 1;
 }
 
-.wrapper .page .main-screen__bg img {
+.wrapper .main-screen__bg img {
   position: absolute;
   z-index: 12;
   right: 0%;
@@ -81,7 +86,7 @@
   height: 94%;
 }
 
-.wrapper .page .main-screen__first-row {
+.wrapper .main-screen__first-row {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,15 +101,15 @@
   z-index: 11;
 }
 
-.wrapper .page .main-screen__first-row__logo {
+.wrapper .main-screen__first-row__logo {
   margin: 0 0 0 100px;
 }
 
-.wrapper .page .main-screen__first-row__menu {
+.wrapper .main-screen__first-row__menu {
   margin: 20px 0 0 10px;
 }
 
-.wrapper .page .main-screen__first-row__tel {
+.wrapper .main-screen__first-row__tel {
   width: 27%;
   margin: 0 0 0 44%;
   text-align: center;
@@ -115,7 +120,7 @@
   line-height: 1.2;
 }
 
-.wrapper .page .main-screen__center-row {
+.wrapper .main-screen__center-row {
   position: absolute;
   top: 230px;
   width: 44%;
@@ -123,7 +128,7 @@
   z-index: 11;
 }
 
-.wrapper .page .main-screen__center-row h1 {
+.wrapper .main-screen__center-row h1 {
   font-size: 40pt;
   font-family: "Gilroy";
   font-weight: 100;
@@ -134,7 +139,7 @@
   margin-bottom: 40px;
 }
 
-.wrapper .page .main-screen__center-row p {
+.wrapper .main-screen__center-row p {
   font-size: 18pt;
   font-weight: 200;
   font-family: "Gilroy";
@@ -143,7 +148,7 @@
   margin-bottom: 90px;
 }
 
-.wrapper .page .main-screen__center-row div {
+.wrapper .main-screen__center-row div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +158,7 @@
       justify-content: space-around;
 }
 
-.wrapper .page .main-screen__center-row div a {
+.wrapper .main-screen__center-row div a {
   color: white;
   text-decoration: none;
   font-size: 18pt;
@@ -161,7 +166,7 @@
   font-family: "Gilroy";
 }
 
-.wrapper .page .main-screen #circle-text {
+.wrapper .main-screen #circle-text {
   position: absolute;
   font-weight: 400;
   font-size: 11pt;
@@ -174,12 +179,47 @@
           animation: rotating 10s linear infinite;
 }
 
-.wrapper .page .main-screen__play {
+.wrapper .main-screen__play {
   width: 70px;
   z-index: 20;
   position: absolute;
   top: 700px;
   left: 190px;
+}
+
+.wrapper .main-screen__footer {
+  position: absolute;
+  z-index: 15;
+  width: 355px;
+  height: 55px;
+  top: 860px;
+  left: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .main-screen__footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 150px;
+}
+
+.wrapper .second-page {
+  display: inline-block;
+  width: 1700px;
+  height: 100vh;
+  background-color: #ccc;
 }
 
 #particles-background, #particles-foreground {
@@ -191,6 +231,6 @@
 }
 
 .pg-canvas {
-  height: 100vh;
+  min-height: 950px;
 }
 /*# sourceMappingURL=style.css.map */

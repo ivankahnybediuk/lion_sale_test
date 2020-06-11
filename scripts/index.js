@@ -11,5 +11,3 @@ $(document).ready(()=>{
 new CircleType((document.getElementById('circle-text'))).radius(80)
 })
 
-
-
