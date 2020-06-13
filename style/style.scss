@@ -756,7 +756,7 @@ font-style: normal;
         .thirteenth-page{
             width:2245px;
             height: 100%;
-            padding: 130px 200px 170px 130px;
+            padding: 80px 200px 80px 130px;
             background-color: #fff;
             position: relative;
             z-index: 10;
@@ -764,16 +764,18 @@ font-style: normal;
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: flex-start;
+                margin-bottom:50px;
                 &__number{
                     -webkit-text-stroke:  4px rgb(46, 51, 57);
                     font-size: 200pt;
                     font-family: "Gilroy";
                     font-weight: 900;
                     color: transparent; 
+                    opacity: 0.5;
+                    line-height: 1;
                 }
                 &__text{
                     width:60%;
-                    margin-top: 70px;
                     margin-left: 50px;
                     &__p1{
                         font-size: 75pt;
@@ -790,6 +792,120 @@ font-style: normal;
                         line-height: 1.667;                        
                     }
                 }
+            }
+            &__links{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                &__container{
+                    margin-left:60px;
+                    margin-right: 60px;
+                    &__bg{
+                        font-size: 150pt;
+                        font-family: "CormorantGaramond";
+                        color: rgba(46, 51, 57, 0.051);
+                        font-weight: bold;
+                        line-height: 0.24;  
+                        text-align: left;     
+                        margin-left: -40px;                  
+                    }
+                    h1{
+                        font-size: 24pt;
+                        font-weight: 200;
+                        font-family: "Gilroy";
+                        color: rgb(46, 51, 57);
+                        line-height: 1; 
+                        margin: -40px auto 50px auto;                       
+                    }
+                    li{
+                        margin-bottom: 25px;
+                        a{
+                            font-size: 18pt;
+                            font-family: "Gilroy";
+                            color: rgb(46, 51, 57);
+                            line-height: 1;   
+                            text-decoration: none;                        
+                        }
+                        &:hover{
+                            list-style-image: url("../img/black_arrow.png");
+                            a{
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fourteenth-page{
+            width:800px;
+            height: 950px;
+            position: relative;
+            &__img{
+                background-image: url("../img/fourtheen_img.png");
+                width:850px;
+                height: 100%;
+                overflow:hidden;
+                margin-left: -50px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+            }
+            &__container{
+                background:  linear-gradient(to right, #242b34e0, #394150d5, );
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                &__article{
+                    margin: 660px auto 0 75px;
+                    width:55%;
+                    font-size: 20pt;
+                    font-family: "CormorantGaramond";
+                    color: rgb(255, 255, 255);
+                    line-height: 1.25;                     
+                }
+                p{
+                    margin: 30px auto 70px 75px;
+                    width:55%;
+                    font-size: 20pt;
+                    text-align: center;
+                    font-family: "CormorantGaramond";
+                    color: rgb(255, 255, 255);
+                    line-height: 1.25;    
+                }
+                &__text{
+                    position: absolute;
+                    transform: rotate(270deg);
+                    font-size: 80pt;
+                    width:100%;
+                    font-weight:100 ;
+                    font-family: "Gilroy";
+                    color: rgb(255, 255, 255);  
+                    right: 3%;     
+                    left: 35%;    
+                    top: 40%;         
+                }
+            }
+        }
+        .fifteenth-page{
+            z-index:5;
+            width:1970px;
+            min-height: 950px;
+            background-color: white;
+            overflow: hidden;
+            position: relative;
+            &__img{
+                width:2100px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left:-50px;
+                background-image: url("../img/screens-img.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow:hidden;
             }
         }
         

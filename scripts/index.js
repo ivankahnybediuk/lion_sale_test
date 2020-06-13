@@ -27,5 +27,8 @@ $('.third-page').slick({
   arrows: false
 });
 
-		
-
+$("body").mousewheel(function(event, delta) {
+  this.scrollLeft -= (delta * 3);
+  return false
+  event.preventDefault();
+}, { passive: false });
