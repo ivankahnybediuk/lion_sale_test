@@ -5,9 +5,9 @@
 //     $(".main-screen__bg").css("height", document.documentElement.clientHeight)
 //   })
 // })
-$(document).ready(()=>{
-  // $(".main-screen__circle-text").lettering();
-// $(".main-screen__circle-text").circleType()
+$(document).ready(function(){
 new CircleType((document.getElementById('circle-text'))).radius(80)
+
+
 })
 
