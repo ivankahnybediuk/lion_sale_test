@@ -10,10 +10,7 @@ paralaxContainer.forEach(element=>{
   
   })
 })
-window.scroll(function(e){
-  console.log("top "+ e.scrollTop )
-  console.log("left "+ e.scrollLeft )
-})
+
 
 })
 $('.third-page').slick({
