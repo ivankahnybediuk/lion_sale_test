@@ -1,0 +1,406 @@
+@media screen and (max-height:900px){
+    .main-screen__center-row h1{
+        font-size:35pt;
+    }
+    .main-screen__center-row p{
+        font-size:16pt;
+    }
+    .main-screen__footer{
+        margin-top:30vh;
+    }
+    .second-page__bg__1{
+        font-size: 300px;
+        top:20vh;
+    }
+    .second-page__text h1{
+        font-size: 50pt;
+        margin-top:15vh;
+    }
+    .third-page{
+        width:520px
+    }
+    .forth-page{
+        width:700px
+    }
+    .forth-page__container__text{
+        font-size:80pt
+    }
+    .fifth-page__bg__1{
+        font-size: 300px;
+        top:20vh;
+    }
+    .fifth-page__text h1{
+        font-size: 50pt;
+        margin-top:15vh;
+    }
+    .sixth-page{
+        width:700px
+    }
+    .sixth-page__container__text{
+        font-size:80pt
+    }
+    .sixth-page__container__article{
+        font-size:18pt
+    }
+    .sixth-page__container__article p{
+        font-size:18pt
+    }
+    .eigth-page{
+        width:700px
+    }
+    .eigth-page__container__text{
+        font-size:80pt
+    }
+    .eigth-page__container__article{
+        font-size:14pt
+    }
+    .eigth-page__container__article p{
+        font-size:14pt
+    }
+    .tenth-page{
+        width:700px
+    }
+    .tenth-page__container__text{
+        font-size:80pt
+    }
+    .tenth-page__container__article{
+        font-size:14pt
+    }
+    .tenth-page__container__article p{
+        font-size:14pt
+    }
+    .twelweth-page{
+        width:700px
+    }
+    .twelweth-page__container__text{
+        font-size:80pt
+    }
+    .twelweth-page__container__article{
+        font-size:14pt
+    }
+    .twelweth-page__container__article p{
+        font-size:14pt
+    }
+    .fourteenth-page{
+        width:700px
+    }
+    .fourteenth-page__container__text{
+        font-size:60pt
+    }
+    .fourteenth-page__container__article{
+        font-size:14pt
+    }
+    .fourteenth-page__container__article p{
+        font-size:14pt
+    }
+    .seventh-page__bg__1{
+        font-size: 300px;
+        top:20vh;
+    }
+    .seventh-page__text h1{
+        font-size: 50pt;
+        margin-top:15vh;
+    }
+    .ninth-page__bg__1{
+        font-size: 300px;
+        top:20vh;
+    }
+    .ninth-page__text h1{
+        font-size: 50pt;
+        margin-top:15vh;
+    }
+    .eleventh-page__bg__1{
+        font-size: 300px;
+        top:20vh;
+    }
+    .eleventh-page__text h1{
+        font-size: 50pt;
+        margin-top:15vh;
+    }
+    .thirteenth-page{
+        padding: 4vh 200px 4vh 130px;
+    }
+    .thirteenth-page__head{
+        margin-bottom: 3vh;
+    }
+    .thirteenth-page__head__number{
+        font-size: 130pt;
+    }
+    .thirteenth-page__head__text__p1{
+        font-size: 50pt;
+    }
+    .thirteenth-page__head__text__p2{
+        font-size: 16pt;
+    }
+    .thirteenth-page__links__container__bg{
+        font-size:80pt ;
+    }
+    .thirteenth-page__links__container h1{
+        font-size:28pt ;
+    }
+    .thirteenth-page__links__container li a{
+        font-size: 14pt;
+    }
+    .sixteen-page__center-row__form form input{
+        height: 40px;
+        padding: 10px;
+    }
+    .sixteen-page__center-row__form form button{
+        height: 40px;
+        line-height: 1;
+    }
+    .sixteen-page__copyright{
+        margin: 3vh 0 5vh 0;
+    }
+    .sixteen-page__center-row__links a div {
+        margin: 2vh 0 2vh 0;
+        font-size: 15pt;
+        line-height: 1.5;  
+    }
+
+}
+@media screen and (max-height:770px){
+    
+    .main-screen__center-row p{
+        margin-bottom:5%;
+    }
+    .main-screen__footer{
+        margin-top:26vh;
+    }
+    .main-screen #circle-text{
+        top:65vh;
+        font-size: 8pt;
+    }
+    .main-screen__play{
+        top:70vh;
+        left:12%;
+        width:40px;
+    }
+    .third-page__card__number{
+        font-size:25pt;
+    }
+    .third-page__card__number span{
+        font-size:40pt;
+    }
+    .third-page__card__text{
+        font-size:12pt;
+    }
+    .forth-page{
+        width:600px
+    }
+    .sixth-page{
+        width:600px
+    }
+    .eigth-page{
+        width:600px
+    }
+    .tenth-page{
+        width:600px
+    }
+    .twelweth-page{
+        width:600px
+    }
+    .fourteenth-page{
+        width:600px
+    }
+    .ninth-page__bg__2{
+        transform: scale(0.7) translateX(-900px);
+    }
+    .seventh-page{
+        width:1000px
+    }
+    .ninth-page{
+        width:1000px
+    }
+    .eleventh-page{
+        width:1000px
+    }
+
+}
+@media screen and (max-height:690px){
+    .main-screen__center-row h1{
+        font-size:32pt;
+    }
+    .main-screen__center-row p{
+        font-size:14pt;
+        margin-bottom: 3%;
+    }
+    .main-screen__footer{
+        margin-top:32vh;
+    }
+    .second-page__bg__1{
+        font-size: 200px;
+        top:18vh;
+        left:120px;
+    }
+    .second-page__text h1{
+        font-size: 40pt;
+        margin-top:15vh;
+    }
+    .second-page__text p{
+        font-size: 14pt;
+        margin-bottom:1%;
+    }
+    .forth-page{
+        width:500px
+    }
+    .forth-page__container__text{
+        font-size:60pt
+    }
+    .fifth-page__text h1{
+        font-size: 40pt;
+        margin-top:15vh;
+    }
+    .fifth-page__text p{
+        font-size: 14pt;
+        margin-bottom:1%;
+    }
+    .sixth-page{
+        width:500px
+    }
+    .sixth-page__container__text{
+        font-size:50pt
+    }
+    .sixth-page__container__article{
+        font-size:12pt
+    }
+    .sixth-page__container__article p{
+        font-size:12pt
+    }
+    .eigth-page{
+        width:500px
+    }
+    .eigth-page__container__text{
+        font-size:50pt
+    }
+    .eigth-page__container__article{
+        font-size:12pt
+    }
+    .eigth-page__container__article p{
+        font-size:12pt
+    }
+    .tenth-page{
+        width:500px
+    }
+    .tenth-page__container__text{
+        font-size:50pt
+    }
+    .tenth-page__container__article{
+        font-size:12pt
+    }
+    .tenth-page__container__article p{
+        font-size:12pt
+    }
+    .twelweth-page{
+        width:500px
+    }
+    .twelweth-page__container__text{
+        font-size:50pt
+    }
+    .twelweth-page__container__article{
+        font-size:12pt
+    }
+    .twelweth-page__container__article p{
+        font-size:12pt
+    }
+    .fourteenth-page{
+        width:500px
+    }
+    .fourteenth-page__container__text{
+        font-size:50pt
+    }
+    .fourteenth-page__container__article{
+        font-size:12pt
+    }
+    .fourteenth-page__container__article p{
+        font-size:12pt
+    }
+    .seventh-page__bg__1{
+        font-size: 200px;
+        top:18vh;
+        left:120px;
+    }
+    .seventh-page__text h1{
+        font-size: 40pt;
+        margin-top:15vh;
+    }
+    .seventh-page__text p{
+        font-size: 14pt;
+        margin-bottom:1%;
+    }
+    .ninth-page__bg__1{
+        font-size: 200px;
+        top:18vh;
+        left:120px;
+    }
+    .ninth-page__text h1{
+        font-size: 40pt;
+        margin-top:15vh;
+    }
+    .ninth-page__text p{
+        font-size: 14pt;
+        margin-bottom:1%;
+    }
+    .eleventh-page__bg__1{
+        font-size: 200px;
+        top:18vh;
+        left:120px;
+    }
+    .eleventh-page__text h1{
+        font-size: 40pt;
+        margin-top:15vh;
+    }
+    .eleventh-page__text p{
+        font-size: 14pt;
+        margin-bottom:1%;
+    }
+    .thirteenth-page{
+        width:1700px
+    }
+    .thirteenth-page__head__number{
+        font-size: 100pt;
+    }
+    .thirteenth-page__head__text__p1{
+        font-size: 40pt;
+        margin-bottom: 1vh;
+    }
+    .thirteenth-page__head__text{
+        width:80%
+    }
+    .thirteenth-page__head__text__p2{
+        font-size: 16pt;
+    }
+    .thirteenth-page__links__container__bg{
+        font-size:70pt ;
+    }
+    .thirteenth-page__links__container h1{
+        font-size:20pt ;
+        margin-bottom: 2vh;
+    }
+    .thirteenth-page__links__container{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .thirteenth-page__links__container li a{
+        font-size:14pt ;
+    }
+    .thirteenth-page__links__container li {
+        margin-bottom: 2vh ;
+    }
+}
+@media screen and (max-height:660px){
+    .main-screen__center-row h1{
+        font-size:32pt;
+    }
+    
+    .main-screen__footer{
+        margin-top:26vh;
+    }
+    .third-page{
+        width:400px
+    }
+    .third-page a img{
+        margin-left: 250px;
+    }
+}
+

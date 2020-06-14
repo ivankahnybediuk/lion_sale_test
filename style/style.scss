@@ -1,3 +1,4 @@
+
 @font-face {
 font-family: 'Gilroy';
 src: url('../fonts/Gilroy-Light.eot');
@@ -47,6 +48,7 @@ font-style: normal;
 
 .outer-wrapper{
 height: 100vw;
+min-width: 600px;
 transform-origin: top left;
 overflow-y: scroll;
 overflow-x: hidden;
@@ -54,7 +56,8 @@ background-color: transparent;
 position: absolute;
 }
 .wrapper{
-    width: 20000px;
+    width: max-content;
+    min-height: 800px;
     display: flex;
     overflow-y: hidden;
     transform-origin: top left;
@@ -70,7 +73,6 @@ position: absolute;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            min-width: 1700px;
             overflow: hidden;
             &__bg{
                 img{
@@ -150,25 +152,25 @@ position: absolute;
               font-family: "Gilroy";
               color: rgb(255, 255, 255);      
               z-index: 12;
-              top:650px;//625
-              left: 220px;
+              top:60vh;//625
+              left: 13%;
               animation: rotating 10s linear infinite; 
             }
             &__play{
                 width:70px;
                 z-index:20;
                 position: absolute;
-                top:700px;
-                left:190px;
+                top:66vh;
+                left:11.5%;
             }
             &__footer{
                 position: relative;
                 z-index: 15;
-                width: 355px;
-                height: 55px;
-                margin-top:380px;
-                margin-left:90px;
-                margin-bottom: 40px;
+                width: 21%;
+                height: 6%;
+                margin-top:38vh;
+                margin-left:5%;
+                margin-bottom: 4%;
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-between;
@@ -176,7 +178,10 @@ position: absolute;
                     display: flex;
                     flex-wrap: nowrap;
                     justify-content: space-around;
-                    width:150px
+                    width:50%;
+                    img{
+                        transform: scale(1.4);
+                    }
                 }
             }
             
@@ -185,6 +190,7 @@ position: absolute;
             width: 1700px;
             background-color: #fff;
             position: relative;
+            height: 100vh;
             &__bg{
                 &__1{
                     position: absolute;
@@ -192,15 +198,15 @@ position: absolute;
                     font-family: "CormorantGaramond";
                     color: rgb(243, 244, 246);
                     line-height: 0.055;     
-                    top:270px;
+                    top:32vh;
                     left:70px;               
                 }
                 &__2{
-                    width:500px;
-                    height: 508px;
+                    width:29%;
+                    height: 52%;
                     position: absolute;
-                    top:440px;
-                    left:1000px;
+                    top:45vh;
+                    left:60%;
                 }
             }
             &__text{
@@ -211,7 +217,7 @@ position: absolute;
                     font-weight: 100;
                     color: rgb(46, 51, 57);
                     line-height: 1.267;  
-                    margin: 230px 0 0 180px; 
+                    margin: 24vh 0 0 10%; 
                                       
                 }
                 p{
@@ -221,48 +227,44 @@ position: absolute;
                     font-family: "Gilroy";
                     color: rgb(46, 51, 57);
                     line-height: 1.25;  
-                    margin: 45px 0 0 180px;
+                    margin: 3% 0 0 10%;
                     width:45%;                  
                 }
             }
         }
         .third-page{
-            height: 950px;
+            height: 100vh;
             width:600px;
-            display: flex;
-            flex-direction:column;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: center;
+            z-index:2;
             background:  linear-gradient(to right, #242b34, #394150, );
             &__card{
-                height: 50%;
+                height: 40vh;
                 position: relative;
                 &__number{
-                    margin:25px 0 15px 100px;
-                    font-size: 40pt;
+                    margin:4vh 0 1vh 100px;
+                    font-size: 32pt;
                     font-family: "Gilroy";
                     color: rgb(255, 255, 255); 
                     span{
                         -webkit-text-stroke: 1px white;
-                        font-size: 85pt;
+                        font-size: 55pt;
                         font-family: "Gilroy";
                         font-weight: 900;
                         color: transparent;
                     }                   
                 }
                 &__text{
-                    font-size: 18pt;
+                    font-size: 15pt;
                     font-family: "Gilroy";
                     color: rgb(255, 255, 255); 
                     font-weight: 100; 
                     margin-left: 100px; 
                     margin-right: 60px;  
-                    margin-bottom: 40px;             
+                    margin-bottom:2vh;             
                 }
                 a{
                     img{
-                        margin-left: 360px;
+                        margin-left: 45%;
                         margin-bottom: 20px;
                     }
                 }
@@ -270,23 +272,25 @@ position: absolute;
         }
         .forth-page{
             width:800px;
-            height: 950px;
+            height: 100vh;
             position: relative;
             &__img{
                 background-image: url("../img/forth-page_img.png");
-                width:800px;
-                height: 100%;
+                width:120%;
+                height: 100vh;
                 overflow:hidden;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                z-index: 0;
+                margin-left: -15%;
             }
             &__container{
-                background:  linear-gradient(to right, #242b34e0, #394150d5, );
+                background:  linear-gradient(to right, #242b34e0, #394150d5 );
                 position: absolute;
                 top: 0;
                 width: 100%;
-                height: 100%;
+                height: 100vh;
                 &__text{
                     position: absolute;
                     transform: rotate(270deg);
@@ -296,11 +300,11 @@ position: absolute;
                     color: rgb(255, 255, 255);  
                     right: 3%;     
                     left: 65%;    
-                    top: 65%;         
+                    top: 65vh;         
                 }
                 a{
                     div{
-                        margin: 785px auto 105px 60px;
+                        margin: 82vh auto 11vh 7.5%;
                         color: white;
                         border: white solid 1px;
                         
@@ -310,7 +314,7 @@ position: absolute;
         }
         .fifth-page{
             width: 1100px;
-            height: 950px;
+            height: 100vh;
             background-color: #fff;
             position: relative;
             &__bg{
@@ -320,8 +324,8 @@ position: absolute;
                     font-family: "CormorantGaramond";
                     color: rgb(243, 244, 246);
                     line-height: 0.055;     
-                    top:270px;
-                    left:70px;               
+                    top:32vh;
+                    left:70px;                
                 }
             }
             &__text{
@@ -332,7 +336,7 @@ position: absolute;
                     font-weight: 100;
                     color: rgb(46, 51, 57);
                     line-height: 1.267;  
-                    margin: 230px 0 0 180px; 
+                    margin: 24vh 0 0 10%; 
                                       
                 }
                 p{
@@ -342,7 +346,7 @@ position: absolute;
                     font-family: "Gilroy";
                     color: rgb(46, 51, 57);
                     line-height: 1.25;  
-                    margin: 45px 0 0 180px;
+                    margin: 3% 0 0 10%;
                     width:70%;   
                     span{
                         font-weight: 700;
@@ -352,12 +356,12 @@ position: absolute;
         }
         .sixth-page{
             width:800px;
-            height: 950px;
+            height: 100vh;
             position: relative;
             &__img{
                 background-image: url("../img/sixth-page_img.png");
-                width:800px;
-                height: 100%;
+                width:110%;
+                height: 100vh;
                 overflow:hidden;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -370,7 +374,7 @@ position: absolute;
                 width: 100%;
                 height: 100%;
                 &__article{
-                    margin: 700px auto 0 75px;
+                    margin: 70vh auto 0 9%;
                     width:55%;
                     font-size: 20pt;
                     font-family: "CormorantGaramond";
@@ -378,7 +382,7 @@ position: absolute;
                     line-height: 1.25;                     
                 }
                 p{
-                    margin: 30px auto 70px 75px;
+                    margin: 3% auto 7% 9%;
                     width:55%;
                     font-size: 20pt;
                     text-align: center;
@@ -395,16 +399,16 @@ position: absolute;
                     color: rgb(255, 255, 255);  
                     right: 3%;     
                     left: 65%;    
-                    top: 65%;         
+                    top: 65vh;          
                 }
             }
         }
         .seventh-page{
             width: 1700px;
-            height: 950px;
             background-color: #fff;
             position: relative;
-            z-index: 5;
+            height: 100vh;
+            z-index:2;
             &__bg{
                 &__1{
                     position: absolute;
@@ -412,16 +416,17 @@ position: absolute;
                     font-family: "CormorantGaramond";
                     color: rgb(243, 244, 246);
                     line-height: 0.055;     
-                    top:270px;
+                    top:32vh;
                     left:70px;               
                 }
                 &__2{
-                    width:500px;
-                    height: 508px;
+                    width:29%;
+                    height: 52%;
                     position: absolute;
-                    top:440px;
-                    left:1100px;
+                    top:40vh;
+                    left:60%;
                     transform: rotate(115deg);
+                    
                 }
             }
             &__text{
@@ -432,7 +437,7 @@ position: absolute;
                     font-weight: 100;
                     color: rgb(46, 51, 57);
                     line-height: 1.267;  
-                    margin: 230px 0 0 180px; 
+                    margin: 24vh 0 0 10%; 
                                       
                 }
                 p{
@@ -442,25 +447,25 @@ position: absolute;
                     font-family: "Gilroy";
                     color: rgb(46, 51, 57);
                     line-height: 1.25;  
-                    margin: 45px 0 0 180px;
-                    width:60%;                  
+                    margin: 3% 0 0 10%;
+                    width:45%;                  
                 }
             }
         }
         .eigth-page{
             width:800px;
-            height: 950px;
+            height: 100vh;
             position: relative;
             &__img{
                 background-image: url("../img/eigth-page_img.png");
-                width:850px;
-                height: 100%;
+                width:120%;
+                height: 100vh;
                 overflow:hidden;
-                margin-left: -50px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                z-index: 1;
+                z-index: 0;
+                margin-left: -15%;
             }
             &__container{
                 background:  linear-gradient(to right, #242b34e0, #394150d5, );
@@ -469,7 +474,7 @@ position: absolute;
                 width: 100%;
                 height: 100%;
                 &__article{
-                    margin: 700px auto 0 75px;
+                    margin: 70vh auto 0 9%;
                     width:55%;
                     font-size: 20pt;
                     font-family: "CormorantGaramond";
@@ -477,7 +482,7 @@ position: absolute;
                     line-height: 1.25;                     
                 }
                 p{
-                    margin: 30px auto 70px 75px;
+                    margin: 3% auto 7% 9%;
                     width:55%;
                     font-size: 20pt;
                     text-align: center;
@@ -494,16 +499,16 @@ position: absolute;
                     color: rgb(255, 255, 255);  
                     right: 3%;     
                     left: 65%;    
-                    top: 65%;         
+                    top: 65vh;          
                 }
             }
         }
         .ninth-page{
             width: 1700px;
-            height: 950px;
             background-color: #fff;
             position: relative;
-            z-index: 5;
+            height: 100vh;
+            z-index:2;
             &__bg{
                 &__1{
                     position: absolute;
@@ -511,14 +516,14 @@ position: absolute;
                     font-family: "CormorantGaramond";
                     color: rgb(243, 244, 246);
                     line-height: 0.055;     
-                    top:270px;
-                    left:70px;               
+                    top:32vh;
+                    left:70px; 
                 }
                 &__2{
                     width: 520px;
                     height: 450px;
                     position: absolute;
-                    top:420px;
+                    top:30vh;
                     left:1100px;
                     z-index: 6;
                     opacity: 0.3;
@@ -534,11 +539,11 @@ position: absolute;
                     animation: triangles 6s linear infinite;
                     }
                     &__2{
-                        background-image: url("../img/triangle_2.png");
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        width: 416px;
+                    background-image: url("../img/triangle_2.png");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 416px;
                     height: 360px;
                     position: absolute;
                     top:13%;
@@ -547,11 +552,11 @@ position: absolute;
                     animation-delay: 2s;
                         }
                     &__3{
-                        background-image: url("../img/triangle_3.png");
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        width: 312px;
+                    background-image: url("../img/triangle_3.png");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 312px;
                     height: 270px;
                     position: absolute;
                     top:26%;
@@ -560,11 +565,11 @@ position: absolute;
                     animation-delay: 4s;
                         }
                     &__4{
-                        background-image: url("../img/triangle_4.png");
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        width: 208px;
+                    background-image: url("../img/triangle_4.png");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 208px;
                     height: 180px;
                     position: absolute;
                     top:39%;
@@ -583,7 +588,7 @@ position: absolute;
                     font-weight: 100;
                     color: rgb(46, 51, 57);
                     line-height: 1.267;  
-                    margin: 230px 0 0 180px; 
+                    margin: 24vh 0 0 10%; 
                                       
                 }
                 p{
@@ -593,25 +598,25 @@ position: absolute;
                     font-family: "Gilroy";
                     color: rgb(46, 51, 57);
                     line-height: 1.25;  
-                    margin: 45px 0 0 180px;
-                    width:60%;                  
+                    margin: 3% 0 0 10%;
+                    width:45%;                  
                 }
             }
         }
         .tenth-page{
             width:800px;
-            height: 950px;
+            height: 100vh;
             position: relative;
             &__img{
                 background-image: url("../img/tenth_img.png");
-                width:850px;
-                height: 100%;
+                width:120%;
+                height: 100vh;
                 overflow:hidden;
-                margin-left: -50px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                z-index: 1;
+                z-index: 0;
+                margin-left: -15%;
             }
             &__container{
                 background:  linear-gradient(to right, #242b34e0, #394150d5, );
@@ -620,7 +625,7 @@ position: absolute;
                 width: 100%;
                 height: 100%;
                 &__article{
-                    margin: 660px auto 0 75px;
+                    margin: 70vh auto 0 9%;
                     width:55%;
                     font-size: 20pt;
                     font-family: "CormorantGaramond";
@@ -628,7 +633,7 @@ position: absolute;
                     line-height: 1.25;                     
                 }
                 p{
-                    margin: 30px auto 70px 75px;
+                    margin: 3% auto 7% 9%;
                     width:55%;
                     font-size: 20pt;
                     text-align: center;
@@ -645,16 +650,16 @@ position: absolute;
                     color: rgb(255, 255, 255);  
                     right: 3%;     
                     left: 65%;    
-                    top: 65%;         
+                    top: 65vh;          
                 }
             }
         }
         .eleventh-page{
             width: 1700px;
-            height: 950px;
             background-color: #fff;
             position: relative;
-            z-index: 5;
+            height: 100vh;
+            z-index:2;
             &__bg{
                 &__1{
                     position: absolute;
@@ -662,16 +667,17 @@ position: absolute;
                     font-family: "CormorantGaramond";
                     color: rgb(243, 244, 246);
                     line-height: 0.055;     
-                    top:270px;
+                    top:32vh;
                     left:70px;               
                 }
                 &__2{
-                    width:500px;
-                    height: 508px;
+                    width:29%;
+                    height: 52%;
                     position: absolute;
-                    top:440px;
-                    left:1100px;
+                    top:40vh;
+                    left:60%;
                     transform: rotate(115deg);
+                    
                 }
             }
             &__text{
@@ -682,7 +688,7 @@ position: absolute;
                     font-weight: 100;
                     color: rgb(46, 51, 57);
                     line-height: 1.267;  
-                    margin: 230px 0 0 180px; 
+                    margin: 24vh 0 0 10%; 
                                       
                 }
                 p{
@@ -692,25 +698,25 @@ position: absolute;
                     font-family: "Gilroy";
                     color: rgb(46, 51, 57);
                     line-height: 1.25;  
-                    margin: 45px 0 0 180px;
-                    width:60%;                  
+                    margin: 3% 0 0 10%;
+                    width:45%;                  
                 }
             }
         }
         .twelweth-page{
             width:800px;
-            height: 950px;
+            height: 100vh;
             position: relative;
             &__img{
                 background-image: url("../img/twelweth_img.png");
-                width:850px;
-                height: 100%;
+                width:120%;
+                height: 100vh;
                 overflow:hidden;
-                margin-left: -50px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                z-index: 1;
+                z-index: 0;
+                margin-left: -15%;
             }
             &__container{
                 background:  linear-gradient(to right, #242b34e0, #394150d5, );
@@ -719,7 +725,7 @@ position: absolute;
                 width: 100%;
                 height: 100%;
                 &__article{
-                    margin: 660px auto 0 75px;
+                    margin: 70vh auto 0 9%;
                     width:55%;
                     font-size: 20pt;
                     font-family: "CormorantGaramond";
@@ -727,7 +733,7 @@ position: absolute;
                     line-height: 1.25;                     
                 }
                 p{
-                    margin: 30px auto 70px 75px;
+                    margin: 3% auto 7% 9%;
                     width:55%;
                     font-size: 20pt;
                     text-align: center;
@@ -744,14 +750,14 @@ position: absolute;
                     color: rgb(255, 255, 255);  
                     right: 3%;     
                     left: 65%;    
-                    top: 65%;         
+                    top: 65vh;          
                 }
             }
         }
         .thirteenth-page{
             width:2245px;
-            height: 100%;
-            padding: 80px 200px 80px 130px;
+            height: 100vh;
+            padding: 8vh 200px 8vh 130px;
             background-color: #fff;
             position: relative;
             z-index: 10;
@@ -759,7 +765,7 @@ position: absolute;
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: flex-start;
-                margin-bottom:50px;
+                margin-bottom:5vh;
                 &__number{
                     -webkit-text-stroke:  4px rgb(46, 51, 57);
                     font-size: 200pt;
@@ -778,7 +784,7 @@ position: absolute;
                         font-family: "Gilroy";
                         color: rgb(46, 51, 57);
                         line-height: 1.107;   
-                        margin-bottom: 30px;                    
+                        margin-bottom: 3vh;                    
                     }
                     &__p2{
                         font-size: 18pt;
@@ -810,10 +816,10 @@ position: absolute;
                         font-family: "Gilroy";
                         color: rgb(46, 51, 57);
                         line-height: 1; 
-                        margin: -40px auto 50px auto;                       
+                        margin: -4vh auto 5vh auto;                       
                     }
                     li{
-                        margin-bottom: 25px;
+                        margin-bottom: 2.5vh;
                         a{
                             font-size: 18pt;
                             font-family: "Gilroy";
@@ -833,18 +839,18 @@ position: absolute;
         }
         .fourteenth-page{
             width:800px;
-            height: 950px;
+            height: 100vh;
             position: relative;
             &__img{
                 background-image: url("../img/fourtheen_img.png");
-                width:850px;
-                height: 100%;
+                width:110%;
+                height: 100vh;
                 overflow:hidden;
-                margin-left: -50px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                z-index: 1;
+                z-index: 0;
+                margin-left: -15%;
             }
             &__container{
                 background:  linear-gradient(to right, #242b34e0, #394150d5, );
@@ -853,7 +859,7 @@ position: absolute;
                 width: 100%;
                 height: 100%;
                 &__article{
-                    margin: 660px auto 0 75px;
+                    margin: 70vh auto 0 9%;
                     width:55%;
                     font-size: 20pt;
                     font-family: "CormorantGaramond";
@@ -861,7 +867,7 @@ position: absolute;
                     line-height: 1.25;                     
                 }
                 p{
-                    margin: 30px auto 70px 75px;
+                    margin: 3% auto 7% 9%;
                     width:55%;
                     font-size: 20pt;
                     text-align: center;
@@ -872,14 +878,13 @@ position: absolute;
                 &__text{
                     position: absolute;
                     transform: rotate(270deg);
-                    font-size: 80pt;
-                    width:100%;
+                    font-size: 100pt;
                     font-weight:100 ;
                     font-family: "Gilroy";
                     color: rgb(255, 255, 255);  
                     right: 3%;     
-                    left: 35%;    
-                    top: 40%;         
+                    left: 60%;    
+                    top: 40vh;          
                 }
             }
         }
@@ -920,10 +925,11 @@ position: absolute;
                 justify-content: space-between;
                 &__links{
                     width:45%;
+                    height: 65vh;
                     a{
                         text-decoration: none;  
                         div{
-                            margin: 20px 0 20px 0;
+                            margin: 2vh 0 2vh 0;
                             font-size: 16pt;
                             font-family: "Gilroy";
                             color: rgb(255, 255, 255);
@@ -943,7 +949,7 @@ position: absolute;
                         flex-wrap: nowrap;
                         justify-content: flex-end;
                         width:100%;
-                        margin:20px -10px 50px auto;
+                        margin:2vh -10px 5vh auto;
                         a{
                             margin:10px;
                         }
@@ -951,7 +957,7 @@ position: absolute;
                     form{
                         input{
                             width:100%;
-                            margin-bottom: 20px;
+                            margin-bottom: 2vh;
                             height: 60px;
                             padding: 10px;
                         }
@@ -978,7 +984,7 @@ position: absolute;
                 width:100%;
                 flex-wrap: nowrap;
                 justify-content: space-between;
-                margin: 100px 0 100px 0;
+                margin: 8vh 0 10vh 0;
             }
         }
         
@@ -1015,4 +1021,7 @@ position: absolute;
         border-radius: 5px;
     }
     }     
+}
+.bigger .third-page__card__text{
+    font-size:12pt;
 }
