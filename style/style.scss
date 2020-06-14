@@ -843,7 +843,7 @@ position: absolute;
             position: relative;
             &__img{
                 background-image: url("../img/fourtheen_img.png");
-                width:110%;
+                width:120%;
                 height: 100vh;
                 overflow:hidden;
                 background-position: center;
@@ -889,16 +889,16 @@ position: absolute;
             }
         }
         .fifteenth-page{
-            z-index:5;
+            z-index:1;
             width:1970px;
-            height: 950px;
+            height: 100vh;
             background-color: white;
             overflow: hidden;
             position: relative;
             &__img{
-                z-index: 10;
+                z-index: -2;
                 width:1970px;
-                height:950px;
+                height:100%;
                 position: absolute;
                 top: 0;
                 left:0;
