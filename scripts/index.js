@@ -1,22 +1,19 @@
 
-// $(".main-screen__bg").css("height", document.documentElement.clientHeight)
-// $(function(){
-//   $(window).resize(function() {
-//     $(".main-screen__bg").css("height", document.documentElement.clientHeight)
-//   })
-// })
+
 $(document).ready(function(){
 new CircleType((document.getElementById('circle-text'))).radius(80)
 
 const paralaxContainer = document.querySelectorAll(".paralax-container")
 paralaxContainer.forEach(element=>{
   element.addEventListener("mousemove", function(event){
-   $(".paralax").css("transform", `translate(${event.screenX/50}px)`)
+   $(".paralax").css("transform", `translate(${event.screenX/20}px)`)
   
   })
 })
-
-
+window.scroll(function(e){
+  console.log("top "+ e.scrollTop )
+  console.log("left "+ e.scrollLeft )
+})
 
 })
 $('.third-page').slick({
