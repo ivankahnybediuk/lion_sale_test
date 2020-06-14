@@ -91,10 +91,7 @@
 }
 
 .outer-wrapper {
-  width: 100vh;
   height: 100vw;
-  -webkit-transform: rotate(-90deg) translateX(-100vh);
-          transform: rotate(-90deg) translateX(-100vh);
   -webkit-transform-origin: top left;
           transform-origin: top left;
   overflow-y: scroll;
@@ -108,10 +105,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 950px;
   overflow-y: hidden;
-  -webkit-transform: rotate(90deg) translateY(-100vh);
-          transform: rotate(90deg) translateY(-100vh);
   -webkit-transform-origin: top left;
           transform-origin: top left;
   background-color: transparent;
@@ -128,7 +122,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 1700px;
-  height: 950px;
   overflow: hidden;
 }
 
@@ -155,11 +148,11 @@
 }
 
 .main-screen__first-row__logo {
-  margin: 0 0 0 100px;
+  margin: 0 0 0 5%;
 }
 
 .main-screen__first-row__menu {
-  margin: 20px 0 0 10px;
+  margin: 1% 0 0 0.5%;
 }
 
 .main-screen__first-row__tel {
@@ -174,9 +167,9 @@
 }
 
 .main-screen__center-row {
-  margin-top: 140px;
+  margin-top: 5%;
   width: 44%;
-  margin-left: 160px;
+  margin-left: 9.5%;
   z-index: 40;
   position: relative;
 }
@@ -189,7 +182,7 @@
   color: white;
   letter-spacing: 5px;
   line-height: normal;
-  margin-bottom: 40px;
+  margin-bottom: 4%;
 }
 
 .main-screen__center-row p {
@@ -198,7 +191,7 @@
   font-family: "Gilroy";
   color: white;
   line-height: 1.667;
-  margin-bottom: 90px;
+  margin-bottom: 9%;
 }
 
 .main-screen__center-row div {
@@ -272,7 +265,6 @@
 
 .second-page {
   width: 1700px;
-  height: 950px;
   background-color: #fff;
   position: relative;
 }

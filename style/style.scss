@@ -46,9 +46,7 @@ font-style: normal;
 }
 
 .outer-wrapper{
-width:100vh;
 height: 100vw;
-transform: rotate(-90deg) translateX(-100vh);
 transform-origin: top left;
 overflow-y: scroll;
 overflow-x: hidden;
@@ -58,9 +56,7 @@ position: absolute;
 .wrapper{
     width: 20000px;
     display: flex;
-    height: 950px;
     overflow-y: hidden;
-    transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     background-color: transparent;
     position: absolute;
@@ -75,7 +71,6 @@ position: absolute;
             background-size: cover;
             background-repeat: no-repeat;
             min-width: 1700px;
-           height: 950px;
             overflow: hidden;
             &__bg{
                 img{
@@ -94,16 +89,16 @@ position: absolute;
                 width: 100%;
                 z-index: 100;
                 &__logo{
-                    margin:0 0 0 100px;
+                    margin:0 0 0 5%;
                 }
                 &__menu{
-                    margin:20px 0 0 10px;
+                    margin:1% 0 0 0.5%;
                 }
                 &__tel{
                     width: 27%;
                     margin: 0 0 0 44%;
                     text-align: center;
-                    font-size: 28pt;//48
+                    font-size: 28pt;
                     font-family: "Gilroy";
                     font-weight: 200;
                     color: rgb(255, 255, 255);
@@ -111,9 +106,9 @@ position: absolute;
                 }
             }
             &__center-row{
-                margin-top:140px;
+                margin-top:5%;
                 width: 44%;
-                margin-left: 160px;
+                margin-left: 9.5%;
                 z-index: 40;
                 position: relative;
                 h1{
@@ -124,7 +119,7 @@ position: absolute;
                     color: rgb(255, 255, 255);     
                     letter-spacing: 5px; 
                     line-height: normal;
-                    margin-bottom: 40px;            
+                    margin-bottom: 4%;            
                 }
                 p{
                     font-size: 18pt;//18
@@ -132,7 +127,7 @@ position: absolute;
                     font-family: "Gilroy";
                     color: rgb(255, 255, 255);
                     line-height: 1.667;    
-                    margin-bottom: 90px;                  
+                    margin-bottom: 9%;                  
                 }
                 div{
                     display: flex;
@@ -188,7 +183,6 @@ position: absolute;
         }
         .second-page{
             width: 1700px;
-            height: 950px;
             background-color: #fff;
             position: relative;
             &__bg{

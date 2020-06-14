@@ -1,6 +1,14 @@
 
-
+$(function(){
+  const documentHeight=document.documentElement.clientHeight;
+  console.log(documentHeight)
+  $(".page"). css("height", documentHeight)
+  $(".outer-wrapper").css("transform", `rotate(-90deg) translateX(-${documentHeight}px)`)
+  $(".outer-wrapper").css("width", `${documentHeight}px`)
+  $(".wrapper").css("transform", `rotate(90deg) translateY(-${documentHeight}px)`)
+})
 $(document).ready(function(){
+ 
 new CircleType((document.getElementById('circle-text'))).radius(80)
 
 const paralaxContainer = document.querySelectorAll(".paralax-container")
