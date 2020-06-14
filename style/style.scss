@@ -62,12 +62,21 @@ font-style: normal;
     50%{transform: translate(10px, 10px) ;}
     100%{transform: translate(10px, -10px) ;}
 }
+.outer-wrapper{
+width:100vh;
+height: 100vw;
+transform: rotate(-90deg) translateX(-100vh);
+transform-origin: top left;
+overflow-y: scroll;
+overflow-x: hidden;
+position: absolute;
+}
 .wrapper{
-    min-width: 20000px;
+    width: 20000px;
     display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
     height: 100%;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
 }
         .main-screen{
             position: relative;
@@ -896,13 +905,13 @@ font-style: normal;
             overflow: hidden;
             position: relative;
             &__img{
-                width:2100px;
-                height: 100%;
+                z-index: 7;
+                width:1970px;
+                width:950px;
                 position: absolute;
                 top: 0;
-                left:-50px;
+                left:0;
                 background-image: url("../img/screens-img.png");
-                background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
                 overflow:hidden;
@@ -937,4 +946,8 @@ font-style: normal;
     line-height: 2.25;
     margin: 75px 0 260px 180px;
     }     
+}
+body{
+    overflow-y: visible;
+    overflow-x: scroll;
 }
