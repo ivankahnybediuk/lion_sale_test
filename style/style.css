@@ -411,6 +411,7 @@
   height: 100vh;
   background-color: #fff;
   position: relative;
+  z-index: 1;
 }
 
 .fifth-page__bg__1 {

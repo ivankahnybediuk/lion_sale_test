@@ -317,6 +317,7 @@ position: absolute;
             height: 100vh;
             background-color: #fff;
             position: relative;
+            z-index: 1;
             &__bg{
                 &__1{
                     position: absolute;
