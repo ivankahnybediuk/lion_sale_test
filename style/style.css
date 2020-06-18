@@ -90,6 +90,10 @@
   }
 }
 
+.outer-wrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
 .outer-wrapper {
   height: 100vw;
   min-width: 600px;

@@ -45,7 +45,7 @@ font-style: normal;
     50%{transform: translate(0, -20px)}
     100%{transform: translate(20px, 20px);}
 }
-
+.outer-wrapper::-webkit-scrollbar { width: 0px; }
 .outer-wrapper{
 height: 100vw;
 min-width: 600px;

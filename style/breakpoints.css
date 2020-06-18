@@ -683,9 +683,9 @@
             margin-bottom: 50px;
             margin-top: 40px;
         }
-        .thirteenth-page__links__container h1::after{
+        /* .thirteenth-page__links__container h1::after{
 content: "▼";
-        }
+        } */
         .thirteenth-page__head{
             flex-direction: column;
             justify-content: flex-start;
